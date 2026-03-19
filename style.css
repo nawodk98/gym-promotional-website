@@ -45,7 +45,7 @@ body {
 }
 
 .navbar .logo {
-    background: url('/logo.jpg');
+    background: url('/img/logo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('/hero.avif') center/cover no-repeat;
+    background: url('/img/hero.avif') center/cover no-repeat;
     padding: 0 20px;
 }
 
@@ -316,13 +316,7 @@ section {
     padding: 22px;
 }
 
-footer {
-    background: #050505;
-    text-align: center;
-    padding: 40px;
-    font-size: 1.1rem;
-    color: var(--text-muted);
-}
+
 
 @media (max-width: 1024px) {
     .hero h1 {
@@ -390,32 +384,46 @@ footer {
     }
 }
 
-.whatsapp {
-    background: url('/whatsapp.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
+
+footer {
+    background: #050505;
+    padding: 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.social-item:hover {
+    color: var(--primary-color);
+    transform: translateY(-4px);
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
     border-radius: 50%;
 }
 
-.facebook {
-    background: url('/facebook.avif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.instergram {
-    background: url('/instergram.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+footer p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
 }
