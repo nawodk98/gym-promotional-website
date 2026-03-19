@@ -45,7 +45,7 @@ body {
 }
 
 .navbar .logo {
-    background: url('/img/logo.jpg');
+    background: url('/logo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('/img/hero.avif') center/cover no-repeat;
+    background: url('/hero.avif') center/cover no-repeat;
     padding: 0 20px;
 }
 
