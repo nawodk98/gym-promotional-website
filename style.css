@@ -399,3 +399,23 @@ footer {
     height: 50px;
     border-radius: 50%;
 }
+
+.facebook {
+    background: url('/facebook.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.instergram {
+    background: url('/instergram.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
