@@ -1,3 +1,31 @@
+// Dark Mode / Light Mode Toggle
+const themeToggle = document.getElementById('themeToggle');
+const themeIcon = document.querySelector('.theme-icon');
+const htmlElement = document.documentElement;
+
+// Check for saved theme preference or default to dark mode
+const currentTheme = localStorage.getItem('theme') || 'dark';
+
+// Apply saved theme
+if (currentTheme === 'light') {
+    document.body.classList.add('light-mode');
+    themeIcon.textContent = '☀️';
+}
+
+// Theme toggle event listener
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    
+    if (document.body.classList.contains('light-mode')) {
+        localStorage.setItem('theme', 'light');
+        themeIcon.textContent = '☀️';
+    } else {
+        localStorage.setItem('theme', 'dark');
+        themeIcon.textContent = '🌙';
+    }
+});
+
+// Contact Form Handler
 const contactForm = document.querySelector('.contact-form');
 
 if (contactForm) {
