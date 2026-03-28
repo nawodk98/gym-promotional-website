@@ -15,7 +15,7 @@ if (currentTheme === 'light') {
 // Theme toggle event listener
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
-    
+
     if (document.body.classList.contains('light-mode')) {
         localStorage.setItem('theme', 'light');
         themeIcon.textContent = '☀️';
